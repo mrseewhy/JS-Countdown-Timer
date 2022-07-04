@@ -1,0 +1,37 @@
+:root {
+    --smaller: .75;
+  }
+  
+  .count-down-bg {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .count-down-bg li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  .count-down-bg li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  
+  @media all and (max-width: 768px) {
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
